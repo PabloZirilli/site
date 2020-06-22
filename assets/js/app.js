@@ -1,8 +1,10 @@
 const row = document.querySelector(".row");
+const container = document.querySelector(".container");
 
 const header = document.createElement('div');
 const logo = document.createElement('svg');
 const footer = document.createElement('div');
+
 
 header.className = 'col-sm-12 brand';
 
@@ -15,9 +17,14 @@ logo.innerHTML = `<svg id="iso" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 
 footer.className = 'col-sm-12 footer';
 
 function load(){
-    header.appendChild(logo);
+    container.appendChild(footer);
     row.appendChild(header);
+    header.appendChild(logo);
 }
 
-load();
+function socialFooter(){
+    const ul = document.createElement('ul');
+    ul.setAttribute('id','social');
 
+}
+load();
