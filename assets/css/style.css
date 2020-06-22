@@ -4,3 +4,5 @@
 .cls-1{fill:#fbfbfb;}
 
 #iso {max-width: 180px;}
+
+#social {display: flex;margin: 0;padding: 0;list-style: none;}

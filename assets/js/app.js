@@ -20,11 +20,22 @@ function load(){
     container.appendChild(footer);
     row.appendChild(header);
     header.appendChild(logo);
+    socialFooter()
 }
 
 function socialFooter(){
     const ul = document.createElement('ul');
     ul.setAttribute('id','social');
+
+    const social = [{url:'https://www.linkedin.com/in/pablo-zirilli/', icon:''},{url:'http://behance.net/zirillipablo', icon:''},{url:'https://github.com/PabloZirilli', icon:''},];
+    
+    for(let i = 0; i < social.length; i++ ) {
+        let socialItem = document.createElement('li');
+        socialItem.innerHTML = `${social[i].url}`;
+        socialItem.setAttribute('class','socialItem');
+        ul.appendChild(socialItem);
+        footer.appendChild(ul);
+    }
 
 }
 load();
