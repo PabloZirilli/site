@@ -1,4 +1,10 @@
-* {text-align: center;}
+*, h1, p {
+    margin: 0;
+    padding: 0;
+}
+* {
+    text-align: center;
+}
 ol, ul {
     margin:0;
     padding: 0;
@@ -11,14 +17,31 @@ li {
     display: inline-block;
     padding: 0 10%;
 }
+
+.brand {
+    display: block;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 10%;
+}
+
 .logo {
     max-width: 180px;
     padding-top: 2%;
     height: 180px;
     opacity: 0;
 }
-.cls-1{fill:#56ffaa;}
-
+.cls-1{
+    fill:#56ffaa;
+}
+.message {
+    display: block;
+    width: 100%;
+    padding: 12%;
+    margin: 90% 0;
+    opacity: 0;
+}
 .footer {
     display: block;
     width: 100%;
@@ -26,7 +49,15 @@ li {
     left: 0px;
     bottom: 10%;
 }
-
 .linkedin, .behance, .github {
     opacity: 0;
 }
+
+@media (min-width: 768px) {
+    .message {
+        margin: 20% 0 0;
+        padding: 10% 0 0;
+    }
+  
+    
+  }
