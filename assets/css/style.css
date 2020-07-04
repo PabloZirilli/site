@@ -1,8 +1,32 @@
 * {text-align: center;}
+ol, ul {
+    margin:0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    display: inline;
+}
+li {
+    display: inline-block;
+    padding: 0 10%;
+}
+.logo {
+    max-width: 180px;
+    padding-top: 2%;
+    height: 180px;
+    opacity: 0;
+}
+.cls-1{fill:#56ffaa;}
 
-/* .cls-1{fill:#56ffaa;} */
-.cls-1{fill:#fbfbfb;}
+.footer {
+    display: block;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 10%;
+}
 
-#iso {max-width: 180px;}
-
-#social {display: flex;margin: 0;padding: 0;list-style: none;}
+.linkedin, .behance, .github {
+    opacity: 0;
+}
