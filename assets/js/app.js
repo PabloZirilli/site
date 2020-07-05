@@ -54,6 +54,6 @@ load();
 let tl = new TimelineMax({});
 
 // Agrego elementos al timeline
-tl.to('.logo', 1, {opacity: 1});
-tl.to('.message', 2, {opacity: 1, delay: 1});
+tl.to('.logo', 1.4, {opacity: 1, delay: 1});
+tl.to('.message', 2, {opacity: 1});
 tl.to('.linkedin , .behance , .github', 1, {opacity: 1});

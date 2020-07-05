@@ -1,3 +1,18 @@
+/* @import url(//fonts.googleapis.com/css?family=Montserrat); */ 
+
+:root {
+    --main-font-family: 'Montserrat', sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, p {
+    font-family: var(--main-font-family) ;
+}
+h1, h2, h3, p {
+    color: #777777;
+}
+h1, p {
+    font-weight: 400 !important;
+}
 *, h1, p {
     margin: 0;
     padding: 0;
@@ -17,7 +32,6 @@ li {
     display: inline-block;
     padding: 0 10%;
 }
-
 .brand {
     display: block;
     width: 100%;
@@ -25,11 +39,10 @@ li {
     left: 0px;
     top: 10%;
 }
-
 .logo {
     max-width: 180px;
-    padding-top: 2%;
-    height: 180px;
+    padding-top: 0%;
+    height: 130px;
     opacity: 0;
 }
 .cls-1{
@@ -39,7 +52,7 @@ li {
     display: block;
     width: 100%;
     padding: 12%;
-    margin: 90% 0;
+    margin: 60% 0;
     opacity: 0;
 }
 .footer {
@@ -47,7 +60,7 @@ li {
     width: 100%;
     position: fixed;
     left: 0px;
-    bottom: 10%;
+    bottom: 5%;
 }
 .linkedin, .behance, .github {
     opacity: 0;
@@ -58,6 +71,25 @@ li {
         margin: 20% 0 0;
         padding: 10% 0 0;
     }
-  
+}
+
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
+    .brand {
+        top: 2%;
+    }
+    .logo {
+        padding-top: 0%;
+        height: 100px;
+        opacity: 0;
+    }
+
+    .message {
+        margin: 16% 0;
+        padding: 10% 25%;
+        opacity: 0;
+    }
+    .footer {
+        bottom: 5%;
+    }
     
-  }
+}
